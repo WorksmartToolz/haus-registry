@@ -124,3 +124,33 @@
 **Rationale:** Clean separation ensures each layer can evolve without breaking the others.
 **Source:** Doc 13 — Registry ID
 **Date:** 2026-06-26
+
+## D-023
+**Decision:** The atomic unit of the Institutional Record is the Registry Event — a recorded assertion about a property, anchored to the Registry ID, supported by provenance, and preserved append-only.
+**Rationale:** "Sourced assertion" is more precise than "occurrence" or "observation" and accommodates all contribution types without special-casing any of them.
+**Source:** Doc 10 — Event Data Model
+**Date:** 2026-06-26
+
+## D-024
+**Decision:** Registry Events are classified into five classes: Occurrence, Observation, Document, Status, and Correction. Class is a required field.
+**Rationale:** Classification governs structural role and relationship rules without constraining the domain-agnostic nature of the event model.
+**Source:** Doc 10 — Event Data Model
+**Date:** 2026-06-26
+
+## D-025
+**Decision:** Correction Events reference prior events and are appended to the record. They do not alter, remove, or replace the events they address.
+**Rationale:** Direct implementation of the architectural principle: history is accumulated, never rewritten.
+**Source:** Doc 10 — Event Data Model
+**Date:** 2026-06-26
+
+## D-026
+**Decision:** Date uncertainty is recorded through a date confidence qualifier, not suppressed. Vocabulary of date confidence levels deferred to Doc 12.
+**Rationale:** Suppressing events with uncertain dates degrades the Institutional Record. The Registry preserves what is known, including the limits of what is known.
+**Source:** Doc 10 — Event Data Model
+**Date:** 2026-06-26
+
+## D-027
+**Decision:** Verification status and Registry Confidence are external to the event record. Changes are applied through Status Events and do not modify the original event.
+**Rationale:** Keeps the event record immutable while allowing confidence to evolve as verification is obtained.
+**Source:** Doc 10 — Event Data Model
+**Date:** 2026-06-26
