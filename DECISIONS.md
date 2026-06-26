@@ -184,3 +184,33 @@
 **Rationale:** Prevents misuse of the confidence score as a pass/fail determination. Preserves participant trust.
 **Source:** Doc 11 — Verification Model
 **Date:** 2026-06-26
+
+## D-033
+**Decision:** The Property Registry has two layers: the Identity Layer (immutable, set at creation) and the Record Layer (accumulating, event-driven).
+**Rationale:** Separates what never changes from what continuously accumulates. Prevents confusion between identity fields and record fields.
+**Source:** Doc 12 — Property Registry Specification
+**Date:** 2026-06-26
+
+## D-034
+**Decision:** Date confidence enumeration defines six levels (DC-1 through DC-6). Events with uncertain dates record the earliest plausible date and the applicable confidence level.
+**Rationale:** Preserves sortability while accurately representing temporal uncertainty. Implements D-026 from Doc 10.
+**Source:** Doc 12 — Property Registry Specification
+**Date:** 2026-06-26
+
+## D-035
+**Decision:** The domain registry specifies recency decay periods and coverage weights per domain. Domains with no recency decay retain permanent recency weight. Domain registry is extensible.
+**Rationale:** Recency decay must be domain-specific. Construction records do not decay; inspection records do.
+**Source:** Doc 12 — Property Registry Specification
+**Date:** 2026-06-26
+
+## D-036
+**Decision:** Registry Confidence Score composite weighting: Coverage 35%, Verification Depth 40%, Recency 25%. Recalibration requires formal architectural revision and Decision logging.
+**Rationale:** Initial weighting prioritizes verification depth as the primary confidence driver. Recalibration pathway preserves long-term adaptability.
+**Source:** Doc 12 — Property Registry Specification
+**Date:** 2026-06-26
+
+## D-037
+**Decision:** At ownership transition, the Property Registry does not reset. Transition is recorded as an Occurrence Event in the OWN domain. All prior events remain active.
+**Rationale:** Direct implementation of the constitutional principle: records accumulate, do not reset.
+**Source:** Doc 12 — Property Registry Specification
+**Date:** 2026-06-26
