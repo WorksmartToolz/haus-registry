@@ -57,12 +57,12 @@ Every product, engineering, business, and governance decision must be traceable 
 
 | Folder | Contents |
 |---|---|
-| `docs/01-governance` | Repository Authoring Standard, Decisions pointer, Glossary, Repository Map |
-| `docs/00-meta` | DECISIONS.md, SESSION_LOG.md |
+| `docs/01-governance` | Repository Authoring Standard, Glossary, Living Repository Standard |
+| `DECISIONS.md` | All architectural decisions (root level)|
+| `SESSION_LOG.md` | Session history and next actions (root level) |
 | `docs/01-constitutional` | All constitutional and companion documents |
 | `docs/02-market` | Market Analysis, Competitive Landscape |
 | `docs/03-users` | User Personas, Stakeholder Analysis |
-| `docs/04-trust` | Trust Framework (detailed implementation) |
 | `docs/05-data` | Data Architecture, Event Data Model, Verification Model, Property Registry Spec |
 | `docs/06-product` | Product Requirements Document, MVP Definition |
 | `docs/07-system` | System Architecture, Database Design, Registry API Spec, UX Design System, Registry AI Architecture, Security & Privacy, Regulatory, Technical Stack |
