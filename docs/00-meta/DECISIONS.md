@@ -117,3 +117,27 @@ participant framework from defaulting to real estate transaction logic.
 **Implications:**
 This framing propagates into the PRD, UX design, onboarding flows, and GTM language.
 Every downstream document that references buyers or sellers should inherit this framing.
+
+---
+## D-010 — Stakeholder analysis organized by institutional relationship, not commercial priority
+**Date:** 2026-06-25
+**Status:** Decided
+Full rationale in Doc 08 — Stakeholder Analysis.
+
+---
+## D-011 — Participant analysis and stakeholder analysis are distinct analytical layers
+**Date:** 2026-06-25
+**Status:** Decided
+Full rationale in Doc 08 — Stakeholder Analysis.
+
+---
+## D-012 — Strategic Importance classifications are property-centric, not revenue-centric
+**Date:** 2026-06-25
+**Status:** Decided
+Full rationale in Doc 08 — Stakeholder Analysis.
+
+---
+## D-013 — Constitutional Traceability, Related Documents, and Downstream Dependencies are repository standards
+**Date:** 2026-06-25
+**Status:** Decided
+Full rationale in Doc 08 — Stakeholder Analysis.
