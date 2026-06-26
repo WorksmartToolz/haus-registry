@@ -152,3 +152,89 @@ Product naming:
   Storage: Registry Vault | Pro portal: Registry Pro | API: Registry API
   Score: Registry Confidence Score | Badge: Registry Verified
 ---
+
+---
+
+## Session 004 Brief
+
+**Phase:** Data Architecture
+**Documents Target:** 09 of 28 through 13 of 28
+**Documents Complete at Session Start:** 9 of 28
+
+### Constitutional Docs (ALL COMPLETE — do not reopen)
+- 02 Missing Memory Layer — market lacks persistent institutional record
+- 03 Doctrine — 10 beliefs (property is primary entity, records accumulate,
+  we assemble not create, source visibility, verification increases value,
+  confidence reduces uncertainty, trust is market outcome, build for decades,
+  infrastructure not product, every decision is a precedent)
+- 04 Trust Framework — S1-S6 sources, VL-1 to VL-6 verification,
+  Registry Confidence Score, Registry Verified, dispute protocols
+
+### Market Docs (COMPLETE)
+- 05 Market Analysis — TAM $28-33B, SAM $145-483M ARR, SOM $5-25M ARR yr3
+- 06 Competitive Landscape — 6 categories, none building what we build,
+  moat = record accumulation + verification network + switching cost
+
+### Users and Stakeholders (COMPLETE)
+- 07 Registry Participants — property-centric participant framework,
+  Homeowner as Primary Steward, Seller as Stewardship Transition,
+  Buyer as Incoming Steward, Agent/Inspector/Contractor as Institutional
+  Record relationships, Registry Relationship Map (ASCII)
+- 08 Stakeholder Analysis — four institutional relationship categories,
+  eight-question analytical framework, Strategic Importance classifications,
+  Constitutional Traceability / Related Documents / Downstream Dependencies
+  established as repository standards, D-010 through D-013 logged
+
+### Decisions: D-001 through D-013
+
+### Repository Standards Established (carry forward to all documents)
+- Document Scope section: every document that shares entities with another
+  must open with a scope section explaining the change in analytical perspective
+- Closing trifecta: Constitutional Traceability, Related Documents,
+  Downstream Dependencies
+- Decisions Established section: enduring architectural decisions
+  embedded in the document that produced them
+- cat >> for all DECISIONS.md updates — no manual nano editing
+
+### Next: Data Phase — Documents 09 through 13
+
+**Doc 09 — Data Architecture**
+File: docs/05-data/09-data-architecture.md
+Scope: The structural foundation for how the Institutional Record is organized,
+stored, and maintained. Defines the data model's organizing principles,
+the relationship between the Registry ID, Property Registry, and the
+Institutional Record layers. Must trace to Trust Framework (Doc 04)
+and inform all downstream technical documents.
+
+**Doc 10 — Event Data Model**
+File: docs/05-data/10-event-data-model.md
+Scope: How the Institutional Record is built from discrete, timestamped
+events rather than static records. Every change to a property is an event.
+Events accumulate. Nothing is overwritten.
+
+**Doc 11 — Verification Model**
+File: docs/05-data/11-verification-model.md
+Scope: How source tiers (S1-S6) and verification levels (VL-1 through VL-6)
+from the Trust Framework translate into the data layer. How the Registry
+Confidence Score is calculated from Coverage, Verification Depth, and Recency.
+
+**Doc 12 — Property Registry Specification**
+File: docs/05-data/12-property-registry-spec.md
+Scope: The formal specification of the Property Registry — the permanent,
+Registry ID-anchored record for a single property. What it contains,
+how it is structured, what fields are required versus optional,
+and how it evolves across ownership transitions.
+
+**Doc 13 — Registry ID**
+File: docs/05-data/13-registry-id.md
+Scope: The permanent property identifier. How it is assigned, what it
+anchors, how it survives ownership transitions, and why it is the
+foundational key of the entire data architecture.
+
+### Product Naming (reference)
+Company: Haus Registry | Platform: The Registry
+Homeowner dashboard: My Registry | Record: Property Registry
+Report: Registry Report | ID: Registry ID | AI: Registry AI
+Storage: Registry Vault | Pro portal: Registry Pro | API: Registry API
+Score: Registry Confidence Score | Badge: Registry Verified
+
