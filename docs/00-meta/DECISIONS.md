@@ -1,3 +1,4 @@
+
 # Decision Log – Haus Registry
 
 Every significant architectural, product, or strategic decision is recorded here.
@@ -96,3 +97,23 @@ trustworthy, not more.
 **Date:** 2026-06-24
 
 ---
+## D-009 — Buyer and seller framed as stewardship roles, not transaction participants
+
+**Date:** 2026-06-25
+**Status:** Decided
+
+**Decision:**
+The buyer and seller are not treated as transactional participants in the Registry
+participant framework. The seller is the Primary Steward at the moment stewardship
+transfers. The buyer is the Incoming Steward beginning a new stewardship. Neither
+is a separate persona category.
+
+**Rationale:**
+Consistent with the constitutional principle that the property is the primary entity.
+Framing buyer and seller as stewardship roles rather than transaction participants
+keeps the document philosophically aligned with the Doctrine and prevents the
+participant framework from defaulting to real estate transaction logic.
+
+**Implications:**
+This framing propagates into the PRD, UX design, onboarding flows, and GTM language.
+Every downstream document that references buyers or sellers should inherit this framing.
