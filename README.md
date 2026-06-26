@@ -38,15 +38,30 @@ Think Carfax, FICO, or GitHub — but for homes.
 
 ---
 
+## Constitutional Framework
+
+The company is governed by four constitutional documents plus one permanent founding companion.
+Every product, engineering, business, and governance decision must be traceable to one of these.
+
+```
+00 — Founder's Insight          Why did this company need to exist?
+01 — Founding Thesis            What are we building and why?  [companion]
+02 — The Missing Memory Layer   What is fundamentally broken?
+03 — The Haus Registry Doctrine What do we believe because of it?
+04 — The Trust Framework        How is trust created and preserved?
+```
+
+---
+
 ## Repository Structure
 
 | Folder | Contents |
 |---|---|
 | `docs/00-meta` | DECISIONS.md, SESSION_LOG.md |
-| `docs/01-foundation` | Founding Thesis, Problem Statement, Vision, Guiding Principles |
+| `docs/01-constitutional` | All constitutional and companion documents |
 | `docs/02-market` | Market Analysis, Competitive Landscape |
 | `docs/03-users` | User Personas, Stakeholder Analysis |
-| `docs/04-trust` | Trust Framework |
+| `docs/04-trust` | Trust Framework (detailed implementation) |
 | `docs/05-data` | Data Architecture, Event Data Model, Verification Model, Property Registry Spec |
 | `docs/06-product` | Product Requirements Document, MVP Definition |
 | `docs/07-system` | System Architecture, Database Design, Registry API Spec, UX Design System, Registry AI Architecture, Security & Privacy, Regulatory, Technical Stack |
@@ -58,25 +73,33 @@ Think Carfax, FICO, or GitHub — but for homes.
 
 ## Status
 
-🟡 **Phase:** Foundation Documentation
-📄 **Documents Complete:** 0 / 28
+🟡 **Phase:** Constitutional Documentation
+📄 **Constitutional Documents Complete:** 3 / 5
 🗓 **Last Updated:** 2026-06-24
 
 ---
 
 ## Document Status Tracker
 
+### Constitutional Documents
+
 | # | Document | Status |
 |---|---|---|
-| 01 | Founding Thesis | 🔴 STUB |
-| 02 | Problem Statement | 🔴 STUB |
-| 03 | Vision | 🔴 STUB |
-| 04 | Guiding Principles | 🔴 STUB |
+| 00 | Founder's Insight | ✅ COMPLETE |
+| 01 | Founding Thesis | ✅ COMPLETE |
+| 02 | The Missing Memory Layer | ✅ COMPLETE |
+| 03 | The Haus Registry Doctrine | 🔴 STUB |
+| 04 | The Trust Framework | 🔴 STUB |
+
+### All Other Documents
+
+| # | Document | Status |
+|---|---|---|
 | 05 | Market Analysis | 🔴 STUB |
 | 06 | Competitive Landscape | 🔴 STUB |
 | 07 | User Personas | 🔴 STUB |
 | 08 | Stakeholder Analysis | 🔴 STUB |
-| 09 | Trust Framework | 🔴 STUB |
+| 09 | Trust Framework (Implementation) | 🔴 STUB |
 | 10 | Data Architecture | 🔴 STUB |
 | 11 | Event Data Model | 🔴 STUB |
 | 12 | Verification Model | 🔴 STUB |
