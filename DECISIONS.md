@@ -371,3 +371,71 @@ SESSION_LOG.md            Root level
 **Rationale:** A standalone Product Principles document would create a dependency layer between the Constitution and the PRD without adding enough unique content to justify its existence. Embedding principles in the PRD makes them immediately actionable for every downstream document that inherits from it.
 **Source:** Session 005 — Architectural Review
 **Date:** 2026-06-26
+
+---
+
+## D-042 | Spatial & Site Documentation as First-Class Institutional Record Domain
+**Decision:** Haus Registry treats spatial and site documentation as a first-class domain of the Institutional Record. This includes architectural drawings, original plan sets, as-built drawings, site plans, surveys, septic system location records, utility layouts, easements, drainage plans, and similar documents that materially inform the understanding, condition, provenance, risk, or stewardship of the property.
+
+The Registry Vault preserves source documents. Registry Events and the Property Registry structure the significance of those documents where data can be extracted or structured. Spatial and site documentation is included in initial property scrub workflows when available from county permit records, assessor or recorder records, survey records, septic permits, well permits, utility records, prior listing attachments, homeowner uploads, and inspection reports.
+
+**Downstream implications:**
+- Doc 09: Spatial & Site Documentation recognized as an illustrative event domain
+- Doc 10: Supported through Registry Events (plan set uploaded, survey recorded, septic location identified, as-built discrepancy found, utility route documented, easement identified, site feature verified, county record discrepancy detected)
+- Doc 12: Specified as part of the Property Registry schema
+- Doc 14: Surfaced through Registry Vault and My Registry product surfaces
+- Doc 19: AI extraction from drawings, site plans, and spatial documents
+- Doc 20: Privacy and access rules — site plans, septic locations, utility routes, and security-sensitive layouts are not broadly visible by default
+
+**Rationale:** Spatial and site documentation passes the D-016 governing test directly: these records materially inform understanding, condition, provenance, risk, and stewardship of the property. The county's inability to locate a septic system on a three-acre lot — despite having permitted it — is a live illustration of the Missing Memory Layer problem. The Vault preserves the evidence. The Institutional Record structures the significance.
+**Source:** Session 005/006 — Founder insight, validated against D-016
+**Date:** 2026-06-26
+
+---
+
+## D-043 | Technical Stack Remains at Doc 26 as Synthesis and Implementation Document
+**Decision:** Doc 26 (Technical Stack) remains at its current position, after the system architecture documents and business documents. It is a synthesis and implementation document, not a prerequisite.
+
+Doc 26 inherits from and records implementation choices made to fulfill: Doc 14 (PRD), Doc 15 (System Architecture), Doc 16 (Database Design), Doc 17 (API Specification), Doc 19 (AI Architecture), Doc 20 (Security & Privacy). It documents the specific technologies selected — frontend and backend frameworks, database engine, cloud provider, object storage, authentication platform, AI providers, vector database, search engine, observability stack, CI/CD tooling, and infrastructure choices.
+
+**Rationale:** Haus Registry is architecture-driven, not technology-driven. Technology choices inherit from the completed architecture rather than constraining it. Moving Technical Stack ahead of System Architecture would reverse the intentional dependency chain and allow implementation preferences to constrain architectural decisions. The correct sequence: architecture defines what must exist; Technical Stack records what was chosen to implement it.
+**Source:** Session 006 — Sequence review
+**Date:** 2026-06-26
+
+---
+
+## D-044 | Product Element Taxonomy for the PRD
+**Decision:** Every named product element in The Registry is classified by architectural role, not by UI or surface category. The taxonomy has five categories:
+
+**1. Product Surfaces** — Participant-facing workspaces through which users interact with the platform. Complete experiences, not individual features.
+- My Registry
+- Registry Pro
+
+**2. Platform Services** — Cross-cutting platform capabilities used by multiple product surfaces. Services that support surfaces rather than destinations in themselves.
+- Registry AI
+- Registry API
+- Registry Vault
+- Registry Verify (operational verification workflow — executes verification; consumed by multiple surfaces)
+
+**3. Institutional Artifacts** — Persistent outputs or objects produced by the platform. Enduring representations of institutional knowledge, not interfaces.
+- Property Registry
+- Registry Report
+- Registry Timeline (chronological representation of the Institutional Record — parallel to Registry Report)
+- Registry ID
+
+**4. Trust Framework Components** — Mechanisms that express or measure trust. Implement the Trust Framework rather than existing as standalone products.
+- Registry Verified (the badge — expresses the outcome of trust)
+- Registry Confidence Score (the measurement — expresses the quality of the record)
+
+**5. Platform Network & Intelligence** — Capabilities that connect participants or communicate meaningful changes. Operate across the platform rather than belonging to a single surface.
+- Registry Network
+- Registry Insights
+- Registry Alerts
+
+**Taxonomy rationale:**
+- Registry Timeline moved from Platform Network & Intelligence to Institutional Artifact: the Glossary defines it as "the chronological representation of a property's event history derived from the Institutional Record" — a derived representation parallel to Registry Report, not a networking or intelligence capability.
+- Registry Verify moved from Trust Framework Component to Platform Service: the Trust Framework (Doc 04) establishes what verification means philosophically; Registry Verify implements verification operationally as a workflow (document submission, contributor identity validation, claim adjudication). Registry Verified and Registry Confidence Score remain Trust Framework Components because they express the outcome of trust, not the process of achieving it.
+
+**PRD organization follows this taxonomy:** product surfaces → platform services that enable them → institutional artifacts they create and manage → trust mechanisms that govern confidence → network capabilities that connect participants.
+**Source:** Session 006 — PRD Inheritance Report (refined)
+**Date:** 2026-06-26

@@ -119,3 +119,32 @@ D-003 through D-008 (see DECISIONS.md for full text)
 ### Architectural Decisions Established
 - D-001: Working name Property Passport (superseded)
 - D-002: Haus Registry naming system established
+
+---
+
+## Session 006 | 2026-06-26
+**Status:** Complete
+**Phase:** Product Architecture
+
+### Work Completed
+- Session 006 operating mode established: architecture partner, not brainstorming assistant
+- Decision Enforcement Protocol adopted: DECISIONS.md is an executable architectural specification
+- Inheritance Report format adopted as required first step before every major document
+- Inheritance Report completed for Doc 14 — one open question identified (product element taxonomy)
+- D-042: Spatial & Site Documentation logged as first-class Institutional Record domain
+- D-043: Technical Stack confirmed at Doc 26 as synthesis document — architecture-driven, not technology-driven
+- D-044: Product element taxonomy established by architectural role (five categories)
+- D-044 refined: Registry Timeline reclassified as Institutional Artifact; Registry Verify reclassified as Platform Service
+- Doc 14: Product Requirements Document completed — 681 lines across seven parts
+
+### Documents Completed
+- Doc 14: Product Requirements Document
+
+### Architectural Decisions Established
+- D-042: Spatial & Site Documentation as first-class Institutional Record domain
+- D-043: Technical Stack remains at Doc 26 as synthesis and implementation document
+- D-044: Product element taxonomy by architectural role (refined)
+
+### Open Items for Session 007
+- Doc 15: System Architecture is next
+- DECISIONS.md and SESSION_LOG.md require push (sandbox commits did not reach GitHub)
