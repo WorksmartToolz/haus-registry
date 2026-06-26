@@ -46,3 +46,53 @@ reinforcing the registry metaphor that is central to the company's identity.
 **Date:** 2026-06-24
 
 ---
+
+## D-005 | Constitutional Document Completion Order
+**Decision:** Write all four constitutional documents before any market, product,
+or technical documents
+**Rationale:** Every downstream document must trace to a constitutional document.
+Writing market analysis, personas, or architecture before the governing beliefs
+are locked creates drift risk — downstream documents would be written without
+a stable anchor and would need to be revised when beliefs were later clarified.
+**Date:** 2026-06-24
+
+---
+
+## D-006 | Trust Framework Structure
+**Decision:** Six-level source hierarchy (S1-S6) and six verification levels
+(VL-1 through VL-6) as the operating model for trust
+**Alternatives Considered:** Binary verified/unverified model; three-tier model
+(government/professional/self-reported)
+**Rationale:** Binary models are too coarse to reflect actual evidentiary
+differences between sources. A six-level model captures the meaningful
+distinctions between government authority, licensed professional, verified
+business, document-supported homeowner submission, AI extraction, and unknown
+sources — distinctions that matter to lenders, insurers, and appraisers.
+**Date:** 2026-06-24
+
+---
+
+## D-007 | Registry Confidence Score Components
+**Decision:** Three dimensions — Coverage, Verification Depth, Recency —
+weighted composite
+**Rationale:** A single-dimension score (e.g. record count, or average
+verification level alone) fails to capture the full picture of documentation
+quality. Coverage gaps matter as much as verification depth. Recency matters
+because an outdated Registry may not reflect current property state.
+All three dimensions must be visible to participants — the score is never
+presented as a naked number.
+**Date:** 2026-06-24
+
+---
+
+## D-008 | Nothing Is Deleted — Revocation Model
+**Decision:** Revoked records are retained with revocation status noted.
+No records are deleted from The Registry under any circumstances.
+**Rationale:** Deletion destroys the auditability that makes a registry
+trustworthy. A record that was once verified and later found to be inaccurate
+is itself historically significant — it documents what was believed at a given
+time and what was later corrected. Deletion would make the Registry less
+trustworthy, not more.
+**Date:** 2026-06-24
+
+---
