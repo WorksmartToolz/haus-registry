@@ -57,6 +57,7 @@ Every product, engineering, business, and governance decision must be traceable 
 
 | Folder | Contents |
 |---|---|
+| `docs/01-governance` | Repository Authoring Standard, Decisions pointer, Glossary, Repository Map |
 | `docs/00-meta` | DECISIONS.md, SESSION_LOG.md |
 | `docs/01-constitutional` | All constitutional and companion documents |
 | `docs/02-market` | Market Analysis, Competitive Landscape |
