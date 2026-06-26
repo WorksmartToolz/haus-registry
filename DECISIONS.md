@@ -154,3 +154,33 @@
 **Rationale:** Keeps the event record immutable while allowing confidence to evolve as verification is obtained.
 **Source:** Doc 10 — Event Data Model
 **Date:** 2026-06-26
+
+## D-028
+**Decision:** Source tier is assigned at ingestion based on the origin of the assertion and is immutable after assignment. Misclassification is resolved through Correction Events.
+**Rationale:** Provenance must be preserved exactly as recorded. Corrections are events, not edits.
+**Source:** Doc 11 — Verification Model
+**Date:** 2026-06-26
+
+## D-029
+**Decision:** Verification level is assigned at ingestion and may be updated over time. All updates are recorded as Status Events. The original event record is not modified.
+**Rationale:** Implements immutability while allowing confidence to evolve as verification is obtained.
+**Source:** Doc 11 — Verification Model
+**Date:** 2026-06-26
+
+## D-030
+**Decision:** Event-level Registry Confidence is a weighted composite of Coverage, Verification Depth, and Recency. Weighting formula deferred to Doc 12.
+**Rationale:** Confidence is multidimensional. No single input determines it.
+**Source:** Doc 11 — Verification Model
+**Date:** 2026-06-26
+
+## D-031
+**Decision:** Property-level Registry Confidence Score is a domain-weighted composite of event-level confidence values, recalculated on every new event, verification update, or recency decay threshold crossing.
+**Rationale:** Property-level confidence must reflect the full Institutional Record, not any single event or domain.
+**Source:** Doc 11 — Verification Model
+**Date:** 2026-06-26
+
+## D-032
+**Decision:** Registry Confidence is a measurement, not a judgment. It informs participants and does not adjudicate properties or owners.
+**Rationale:** Prevents misuse of the confidence score as a pass/fail determination. Preserves participant trust.
+**Source:** Doc 11 — Verification Model
+**Date:** 2026-06-26
