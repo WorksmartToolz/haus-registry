@@ -103,3 +103,52 @@ Product naming:
   Pro: Registry Pro | API: Registry API | Score: Registry Confidence Score
   Badge: Registry Verified | Network: Registry Network
 ---
+
+## Session 002 — Addendum 2 | 2026-06-24
+**Completed since last log entry:**
+- Document 05: Market Analysis (COMPLETE)
+- Document 06: Competitive Landscape (COMPLETE)
+
+**Key additions:**
+- TAM: ~$28-33B annually (constructed from 5 value pools)
+- Centriq January 2026 shutdown documented as competitive evidence
+- Moat defined: record accumulation + verification network + switching cost
+
+**Documents complete: 7 of 28**
+
+**Session Brief for Session 003:**
+---
+HAUS REGISTRY | Session 003 Brief
+Repo: https://github.com/WorksmartToolz/haus-registry
+Phase: Users and Stakeholders (docs 07-08)
+Documents complete: 7 of 28
+
+Constitutional docs (ALL COMPLETE — do not reopen):
+  02 Missing Memory Layer — market lacks persistent institutional record
+  03 Doctrine — 10 beliefs (property is primary entity, records accumulate,
+     we assemble not create, source visibility, verification increases value,
+     confidence reduces uncertainty, trust is market outcome, build for decades,
+     infrastructure not product, every decision is a precedent)
+  04 Trust Framework — S1-S6 sources, VL-1 to VL-6 verification,
+     Registry Confidence Score, Registry Verified, dispute protocols
+
+Market docs (COMPLETE):
+  05 Market Analysis — TAM $28-33B, SAM $145-483M ARR, SOM $5-25M ARR yr3
+  06 Competitive Landscape — 6 categories, none building what we build,
+     moat = record accumulation + verification network + switching cost
+
+Decisions: D-001 through D-008
+Next: Document 07 — User Personas
+File: docs/03-users/07-user-personas.md
+Scope: Detailed behavioral profiles for primary users of My Registry,
+Registry Pro, and Registry Report. Goals, frustrations, triggers, success criteria.
+Primary persona: the homeowner. Secondary: buyer, seller, agent, inspector,
+contractor. Each must trace to constitutional docs.
+
+Product naming:
+  Company: Haus Registry | Platform: The Registry
+  Homeowner dashboard: My Registry | Record: Property Registry
+  Report: Registry Report | ID: Registry ID | AI: Registry AI
+  Storage: Registry Vault | Pro portal: Registry Pro | API: Registry API
+  Score: Registry Confidence Score | Badge: Registry Verified
+---
