@@ -238,3 +238,100 @@ Report: Registry Report | ID: Registry ID | AI: Registry AI
 Storage: Registry Vault | Pro portal: Registry Pro | API: Registry API
 Score: Registry Confidence Score | Badge: Registry Verified
 
+
+---
+
+## Session 004 | 2026-06-26
+**Status:** Complete
+**Phase:** Data Architecture + Governance
+
+### Documents Completed
+- Doc 09: Data Architecture — organizing principles of the Institutional Record
+- Doc 10: Event Data Model — Registry Event as atomic unit
+- Doc 11: Verification Model — source tiers, verification levels, confidence score
+- Doc 12: Property Registry Specification — schema, enumerations, confidence formula, domain registry
+- Doc 13: Registry ID — permanent canonical identity specification
+
+### Governance Additions
+- Repository Authoring Standard committed (docs/01-governance/00-repository-authoring-standard.md)
+- Living Repository Standard committed (docs/01-governance/04-living-repository-standard.md)
+- Glossary committed with full canonical term set (docs/01-governance/02-glossary.md)
+- Repository Map committed (docs/01-governance/03-repository-map.md)
+- README updated: Governance directory added, data phase marked complete (14/28)
+
+### Architectural Decisions Established
+- D-014: Institutional Record defined as persistent institutional representation of a property's lifecycle
+- D-015: Four architectural principles — canonical identity, accumulated history, domain-agnosticism, extensibility
+- D-016: Governing test — does this event materially inform understanding, condition, provenance, risk, or stewardship?
+- D-017: Event domains are classifications within one record, not separate records
+- D-018: Registry ID is the permanent canonical identifier, assigned at entry, foundational key
+- D-019: Registry ID is opaque — encodes no descriptive attributes
+- D-020: Registry ID assignment is unconditional — no evidence threshold required
+- D-021: Registry ID does not replace existing identifiers — it anchors them
+- D-022: Four architectural layers are independent — Registry ID, Institutional Record, Verification, Confidence
+- D-023: Registry Event is a recorded assertion, anchored to Registry ID, preserved append-only
+- D-024: Five event classes — Occurrence, Observation, Document, Status, Correction
+- D-025: Correction Events reference and append — they do not alter prior events
+- D-026: Date uncertainty recorded via date confidence qualifier, not suppressed
+- D-027: Verification status and confidence are external to the event record
+- D-028: Source tier immutable after assignment — misclassification resolved via Correction Events
+- D-029: Verification level updates recorded as Status Events — original event unchanged
+- D-030: Event-level confidence = weighted composite of Coverage, Verification Depth, Recency
+- D-031: Property-level confidence = domain-weighted composite, recalculated on every trigger
+- D-032: Registry Confidence is a measurement, not a judgment
+- D-033: Property Registry has Identity Layer (immutable) and Record Layer (accumulating)
+- D-034: Date confidence enumeration — DC-1 through DC-6
+- D-035: Domain registry specifies recency decay and coverage weights per domain
+- D-036: Confidence weighting — Coverage 35%, Verification Depth 40%, Recency 25%
+- D-037: Ownership transition recorded as OWN domain event — Property Registry does not reset
+
+### Authoring Rules Established
+- MVP Definition is a scoping exercise, not a discovery exercise — it follows the full PRD
+- Product phase sequence locked: Doc 14 (PRD) through Doc 28 (Future Expansion), MVP Definition last
+- Repository Authoring Standard is authoritative governance for all future sessions
+- Living Repository Standard defines session lifecycle going forward
+
+### Open Questions
+- None — data phase fully closed
+
+### Next Session
+**Phase:** Product
+**Next Action:** Doc 14 — Product Requirements Document
+**File:** docs/06-product/14-product-requirements.md
+**Scope:** Complete product definition across all Registry surfaces. Organized around named product surfaces: My Registry, Registry Pro, Registry Report, Registry Vault, Registry AI, Registry API, Registry Verified, Registry Confidence Score.
+**Note:** PRD defines the complete product vision. MVP Definition (Doc 27) will scope the minimum viable implementation after the full product is defined.
+
+---
+
+## Session 005 Brief
+
+HAUS REGISTRY | Session 005 Brief
+Repo: https://github.com/WorksmartToolz/haus-registry
+Phase: Product Definition
+Documents Complete: 14 of 28
+
+Governance (load first):
+  docs/01-governance/00-repository-authoring-standard.md
+  docs/01-governance/04-living-repository-standard.md
+  DECISIONS.md (D-001 through D-037)
+
+Constitutional (settled — do not reopen):
+  Doctrine: property is primary entity, records accumulate, we assemble not
+  create, source visibility, verification increases value, confidence reduces
+  uncertainty, trust is market outcome, build for decades, infrastructure not
+  product, every decision is a precedent
+  Trust Framework: S1-S6, VL-1 to VL-6, Confidence Score, Registry Verified
+
+Data Architecture (settled — do not reopen):
+  Institutional Record: persistent institutional representation of lifecycle
+  Registry Event: sourced assertion, five classes, append-only
+  Registry ID: opaque, permanent, unconditionally assigned at entry
+  Confidence: Coverage 35% + Verification Depth 40% + Recency 25%
+  Property Registry: Identity Layer + Record Layer
+
+Next Action: Doc 14 — Product Requirements Document
+File: docs/06-product/14-product-requirements.md
+Organize around product surfaces: My Registry, Registry Pro, Registry Report,
+Registry Vault, Registry AI, Registry API, Registry Verified, Registry
+Confidence Score. Full product vision — no MVP scoping here.
+MVP Definition is Doc 27 and inherits from this document.
