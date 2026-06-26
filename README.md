@@ -73,8 +73,8 @@ Every product, engineering, business, and governance decision must be traceable 
 
 ## Status
 
-🟡 **Phase:** Constitutional Documentation
-📄 **Constitutional Documents Complete:** 3 / 5
+✅ **Phase:** Constitutional Documentation — COMPLETE
+📄 **Constitutional Documents Complete:** 5 / 5
 🗓 **Last Updated:** 2026-06-24
 
 ---
@@ -88,8 +88,8 @@ Every product, engineering, business, and governance decision must be traceable 
 | 00 | Founder's Insight | ✅ COMPLETE |
 | 01 | Founding Thesis | ✅ COMPLETE |
 | 02 | The Missing Memory Layer | ✅ COMPLETE |
-| 03 | The Haus Registry Doctrine | 🔴 STUB |
-| 04 | The Trust Framework | 🔴 STUB |
+| 03 | The Haus Registry Doctrine | ✅ COMPLETE |
+| 04 | The Trust Framework | ✅ COMPLETE |
 
 ### All Other Documents
 
